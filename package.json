@@ -1,6 +1,6 @@
 {
   "name": "@badnoodles/eav",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Helper to use an error as value approach in javascript and typescript",
   "main": "dist/index.js",
   "scripts": {
