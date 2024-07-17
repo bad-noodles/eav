@@ -15,13 +15,13 @@ Array destructuring is expect to be used as a way to simulate multiple return va
 
 ## Why?
 
-The try/catch approach creates an extra layer of scope that is often weird to deal with, making you add an extra
-layer of indentation or use let variables to continue with your logic after the try/catch logic.
+The try/catch approach creates an extra layer of scope that is often weird to deal with, making you add extra
+indentation or use let variables to continue with your logic after the try/catch logic.
 
 ## Usage
 
 ```Typescript
-import { eav } from 'eav'
+import { eav } from '@badnoodles/eav'
 
 const [v, err] = await eav<string>(() => Promise.resolve("value"))
 
@@ -30,9 +30,9 @@ if (err) {
   /**
    * The if + return will enable typescript's type narrowing
    * Comment out the return to see typescript complaining about the type of `v`
-   * being possibly null
+   * being possibly null on the console log below
    */
-  return;
+  return
 }
 
 console.log(v.endsWith("ue"))
