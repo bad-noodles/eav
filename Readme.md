@@ -37,3 +37,5 @@ if (err) {
 
 console.log(v.endsWith("ue"))
 ```
+
+Check [the tests](https://github.com/bad-noodles/eav/blob/main/src/index.test.ts) for more usage examples.
